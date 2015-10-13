@@ -12,7 +12,7 @@ Experimental but basic usage is:
 
 It returns a data structure like:
 ```clojure
-:token-data
+{:token-data
  ([{:sent-num 0, :token "My", :pos "PRP$", :net "O", :lemma "my", :sentiment "Neutral"}
    {:sent-num 0, :token "name", :pos "NN", :net "O", :lemma "name", :sentiment "Neutral"}
    {:sent-num 0, :token "is", :pos "VBZ", :net "O", :lemma "be", :sentiment "Neutral"}

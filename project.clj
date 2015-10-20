@@ -1,4 +1,4 @@
-(defproject stanford-talk "0.1.0-SNAPSHOT"
+(defproject stanford-talk "0.1.0"
   :description "Annotator for text using the Stanford CoreNLP"
   :url "https://github.com/gigasquid/stanford-talk"
   :license {:name "Eclipse Public License"

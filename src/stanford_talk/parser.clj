@@ -42,7 +42,7 @@
         _ (.annotate pipeline annotation)
         sentences (.get annotation CoreAnnotations$SentencesAnnotation)
         sentence-tokens (mapv (fn [s] (.get s CoreAnnotations$TokensAnnotation)) sentences)
-        text-data (map-indexed (fn [i t] (->text-data t i)) sentence-tokens)
+        text-data (flatten (map-indexed (fn [i t] (->text-data t i)) sentence-tokens))
         chain-data (.get annotation CorefCoreAnnotations$CorefChainAnnotation)
         chain-refs (->chain-refs chain-data sentences)]
     {:token-data text-data
